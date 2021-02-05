@@ -1,0 +1,226 @@
+body{
+    background-color: #E2F2FC;
+    font-family: Arial; /* 字体是可继承属性， 可以直接放到body */
+}
+
+#blueBorder{
+    background-color: #2196F3;
+    width: 780px;   /* content width*/
+    height: 600px;  /* content height*/
+    margin: 0 auto;
+    padding: 40px 70px;
+}
+
+#main{
+    background-color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    border-radius:7px;
+    width: calc(100% - 6px); /* 也可以直接写654px */
+    height: 594px;
+    /* width: 100%; 因为box-sizing是content-box， 所以这里的100%宽就是660px, 没给border留空间 */
+}
+
+/* 头部 */
+#head{
+    height: 44px;
+    line-height: 44px; /* 重要！！！ 高为44px, 让头部的内容垂直居中 行高也设置为44px */
+    border-bottom: 1.5px solid #f5f0f0;
+    padding: 10px 40px;
+}
+
+.inlineDiv{
+    display: inline-block;
+    vertical-align: middle; /* 重要！！！ 让所有的inline-block以中心线对其 */
+}
+
+/* logo部分 */
+#logoArea{
+    width: 28px;
+    height: 28px;
+}
+#blueCircle{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #2196F3;
+    position: relative;
+}
+#whiteCircle{
+    /* 设置在父元素中居中 */
+    position: absolute;
+    top: 50%;
+    left: 50%; /* top/left 百分比相对于父元素的宽高 */
+    transform: translate(-50%, -50%); /* 相对于自身元素的宽高 */
+
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+}
+.Kodecolor{
+    /* width: 80px; 文本一般情况下可以不设置宽高，除非限定的非常死 */
+    /* height: 14px; */
+    /* padding: 15px 25px 15px 0; */
+    margin: 0 25px 0 5px;
+    /* transform: translate(0,-18px);  骚操作，一般不要这么做*/
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Arial;
+}
+/* 搜索框 */
+.inputArea{
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #f5f0f0;
+    margin-right: 10px;
+}
+.image{
+    width: 16px;
+    height: 16px;
+    padding: 6px;
+}
+.input{
+    width: 150px;
+    height: 28px;
+    position: relative; 
+    margin-top: 0;
+}
+.input:empty::before {
+    content: attr(placeholder);
+    font-size: 8px;
+    font-family: Arial;
+    color: #cdcdcd;
+    text-align: left;
+}
+.navigateBar{
+    font-size:11px;
+    font-weight: bold;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: #504f4f;
+}
+#messageCount{
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    margin-left: 5px;
+    text-align: center;
+    color: #048dfd;
+    background-color: #d3e7f8;
+}
+.avatar{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+/* main body */
+.leftArea{
+    width: calc(30% - 45px);
+    height: 485px;
+    padding: 20px 20px 25px 40px;
+}
+.rightArea{
+    width: calc(70% - 80px);
+    height: 485px;
+    padding: 20px 40px 25px 20px;
+}
+.verticalDiv{
+    width: 100%;
+    margin-top:12px;
+    margin-bottom: 12px;
+}
+.grayText{
+    color: #c0c0c0;
+    font-size: 10px;
+    margin-top: 4px;
+}
+.seperateBox{
+    width: 100%;
+    height:10px;
+    line-height: 10px;
+}
+.seperateTitle{
+    width:20%;
+    height: 100%;
+    margin-right: 3px;
+    font-size: 10px;
+}
+.seperateLine{
+    width: calc(80% - 8px);
+    height: 100%;
+    border-bottom: 1.5px solid #f5f0f0;
+}
+.blueBlock{
+    text-align: center;
+    color: #048dfd;
+    background-color: #d3e7f8;
+    height: 22px;
+    line-height: 22px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 1px 8px;
+}
+.workTitile{
+    font-weight: bold;
+    font-size: 14px;
+    color: #504f4f;
+}
+.skillsLabel{
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 10px;
+    color: #504f4f;
+}
+.infoBox{
+    line-height: 17px;
+    margin-top: 12px;
+}
+.name{
+    font-weight: bold;
+    font-size: 17px;
+}
+.icon{
+    width: 12px;
+    height: 12px;
+    padding: 4px 1px 4px 8px;
+}
+.bookmark{
+    width: 14px;
+    height: 14px;
+    padding: 5px 3px 3px 3px;
+    margin-left: 168px;
+}
+.blueText{
+    color: #2196F3;
+    font-size: 12px;
+}
+.rankings{
+    margin-top: 20px;
+}
+.score{
+    margin-top: 5px;
+}
+.icon-star{
+    width: 14px;
+    height: 14px;
+    padding: 0 1px;
+}
+.btnBox{
+    margin-top: 20px;
+    line-height: 24px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+.msgBox{
+    margin-right: 15px;
+}
+.contractBox{
+    margin-right: 15px;
+    background-color: #E2F2FC;
+    padding: 3px 10px ;
+}
+.reportUser{
+    color: #c0c0c0;
+}
